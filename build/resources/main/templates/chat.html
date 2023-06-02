@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <th:block th:replace="~{/layout/basic :: setContent(~{this :: content})}">
+        <th:block th:fragment="content">
+            <div class="container">
+                <div><label><b>채팅방 테스트</b></label></div>
+                <div class="message-area-wrapper">
+                    <div id="msgArea"></div>
+                    <div class="message-input-wrapper">
+                        <input type="text" id="msg" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <div class="input-group-append">
+                            <button id="send" class="send-button" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </th:block>
+    </th:block>
+</html>
